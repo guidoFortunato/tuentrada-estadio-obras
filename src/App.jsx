@@ -47,6 +47,7 @@ function App() {
       
 
         <Switch>
+                 
           <Route path='/' exact>
             <Navbar/>
             <Section />         
@@ -60,7 +61,7 @@ function App() {
 
           <Route path='/:id' exact >
             <DetalleEvento />            
-          </Route>       
+          </Route>
 
 
           {/* <Route path='*' component={Error404} /> */}

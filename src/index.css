@@ -1486,11 +1486,7 @@ h1, h2, h3, h4, h5, h6 {
   --------------------------------------------------------------*/
   #footer {
     background: #111;
-<<<<<<< HEAD
     padding: 5px 0;
-=======
-    padding: 30px 0;
->>>>>>> 6580e0903fb9e4bf8a820322be1d45074033e169
     color: #fff;
   }
   
@@ -1514,10 +1510,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffcf11;
   }
 
-<<<<<<< HEAD
 
   .footer-bottom {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
@@ -1528,8 +1523,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 15px 0;
   }
 
-=======
->>>>>>> 6580e0903fb9e4bf8a820322be1d45074033e169
     @media screen and (min-width: 768px) and (max-width: 1200px) {
       h6 {
         font-size: 13px !important;
@@ -1561,7 +1554,6 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 1rem !important;
     }
 
-<<<<<<< HEAD
     .card{
       cursor: default;
       box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
@@ -1735,19 +1727,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-=======
-    @media screen and (min-width: 992px) {
-      .zoom {
-        
-        transition: all 0.3s ease-out;
-      }
-    
-      .zoom:hover {
-        
-        transform: scale(1.04);
-      }  
-    }
->>>>>>> 6580e0903fb9e4bf8a820322be1d45074033e169
 
 
 

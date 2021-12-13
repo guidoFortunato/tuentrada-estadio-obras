@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom"
 import { Get } from '../services/privateApiService'
 import rapsodia from '../../img/rapsodia.jpg'
 import { VariablesContext } from '../../context/VariablesProvider'
+import {useHistory} from "react-router-dom";
 
 
 
@@ -11,7 +12,7 @@ const DetalleEvento = (props) => {
 
     const [eventos, setEventos] = React.useState([])
 
-
+    const history = useHistory()
 
     const {variables} = React.useContext(VariablesContext)
 
@@ -52,7 +53,7 @@ const DetalleEvento = (props) => {
     return (
         <>
 
-            <nav  className="navbar navbar-expand-lg navbar-dark navbar-active sticky-top">
+            <nav  className="navbar navbar-expand-lg navbar-dark navbar-active ">
                 <div className="container">
                     <Link to='/'>
                         <img className='cursor' src={variables.logo} style={{width: '125px', height: '40px'}}alt={variables.altLogo} />
@@ -61,7 +62,7 @@ const DetalleEvento = (props) => {
                     
                     <button 
                         className="btn btn-dark ms-auto"
-                        onClick={()=>props.history.push('/')}
+                        onClick={()=> history.goBack()}
                     >
                         {variables.volver}
                     </button>
